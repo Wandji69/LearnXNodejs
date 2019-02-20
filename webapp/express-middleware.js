@@ -1,12 +1,25 @@
-<!DOCTYPE html>
-<html>
+const express = require('express');
+let app = express();
+
+app.use('/css', express.static(__dirname + '/public'));
+
+app.use('/css', (req, res, next)=>{
+    console.log('MIDDLEWARE');
+    next ();
+});
+
+app.get('/', (req, res)=>{
+
+    res.send(`
+
+    <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Blog your thought</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <script src="global.js></script>
+    <link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
     
@@ -22,5 +35,8 @@
 </p>
 
 </body>
+</html> `);
+});
 
-</html>
+app.listen(9999);
+console.log('Its Working');

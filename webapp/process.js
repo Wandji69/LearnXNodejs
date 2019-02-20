@@ -4,7 +4,7 @@
 
 // console.log(flag);
 
-process.stdout.write('Ask me a question: \n');
+process.stdout.write('Ask me a question right now: \n');
 
 process.stdin.on('date', function(answer){
 

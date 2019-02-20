@@ -1,0 +1,28 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "example app",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wandji69/LearnXNode.git"
+  },
+  "author": "Wandji Collins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wandji69/LearnXNode/issues"
+  },
+  "homepage": "https://github.com/Wandji69/LearnXNode#readme"
+}
