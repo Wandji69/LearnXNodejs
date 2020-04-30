@@ -1,4 +1,4 @@
 #discription of files not ment for commit
 
-./node_modules
+node_modules
 .idea
